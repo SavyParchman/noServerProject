@@ -1,0 +1,41 @@
+div {
+    display: block;
+    margin: 0 auto;
+    
+}
+
+body {
+    margin: 0;
+}
+element.style {
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-drag {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.leaflet-container.leaflet-touch-drag {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+}
+
+.leaflet-container.leaflet-touch-zoom {
+    -ms-touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y;
+}
+
+.leaflet-container {
+    background: #ddd;
+    outline: 0;
+    overflow: hidden;
+    font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-grab {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}

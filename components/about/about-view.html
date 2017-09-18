@@ -1,0 +1,32 @@
+<!~~~~~~~~~ ABOUT-VIEW.HTML ~~~~~~~~~>
+<div class="about-view">
+
+  <!-- about-view.html -->
+  <div id="apod-view">
+    <!--~~~~~~~~~~~ APOD CONTAINER BEGINS ~~~~~~~~~~~~~-->
+    <div class="photo-div">
+      <img id="apod-img" class="background-image" ng-src="{{ apod.url }}">
+
+        <!-- APOD IMAGE URL -->
+        <div class="apod-text">
+          <!-- PAGE TITLE -->
+          <p class="apod-title">NASA's Astronomy Photo of the Day</p>
+          <p>{{apod.date}}</p>
+          <!-- APOD DATE -->
+          <p class="apod-name"> {{apod.title}} </p>
+          <!-- APOD TITLE -->
+          <p class="exp-div">{{apod.explanation}}</p>
+          <!-- APOD EXPLANATION -->
+          <p>Copyright: {{apod.copyright}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!--~~~~~~~~~~~ APOD CONTAINER ENDS ~~~~~~~~~~~~~-->
+<!--<p>Content provided by NASA's Astronomy Photo of the Day API</p>
+    <p>Thanks, Nasa, to infinity & beyond</p>-->
+</div>
+
+</div>

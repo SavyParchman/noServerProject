@@ -1,0 +1,109 @@
+<!-- INDEX.HTML -->
+<!DOCTYPE html>
+<html ng-app="iss">
+
+<head>
+  <title>inSpaced</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- SCROLLS -->
+  <!-- BOOTSTRAP STYLESHEET -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- FONTAWESOME  -->
+  <script src="https://use.fontawesome.com/ffac0bf2ff.js"></script>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Roboto:300,400,500,700|Source+Sans+Pro:300,400,700|Raleway:300,400,500" rel="stylesheet" type="text/css">
+  <!-- LEAFLET STYLESHEET -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
+  <!-- CUSTOM STYLESHEETS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/home-style.css">
+  <link rel="stylesheet" href="./assets/css/apod-style.css">
+  <link rel="stylesheet" href="./assets/css/iss-style.css">
+  <link rel="stylesheet" href="./assets/css/pass-times-style.css">
+  <link rel="stylesheet" href="./assets/css/spacemen-style.css">
+  <link rel="stylesheet" href="./assets/css/explore-style.css">
+</head>
+
+<!--~~~~~~~~~~~~~ BEGIN NAVBAR ~~~~~~~~~~~~-->
+<header>
+  <!-- logo -->
+  <img class="logo" height="100px" src="/assets/img/noun_97556 (1).png" alt="logo" />
+
+
+  <div class="header-style">
+    <div class="fun-header">
+      <strong>astrophile</strong><br>
+      <div class="fun"> (n.) one fond of stars, astronomy</div>
+    </div>
+  </div>
+
+</header>
+<body>
+<div class="s-layout">
+  
+  <!-- Sidebar -->
+  <div class="s-layout__sidebar">
+    <a class="s-sidebar__trigger" href="#0">
+         <i class="fa fa-bars"></i>
+      </a>
+
+    <nav class="s-sidebar__nav">
+      <ul>
+        <li><a class="s-sidebar__nav-link" ui-sref="home"><i class="fa fa-globe"></i><em>Home</em></a></li>
+        <li><a class="s-sidebar__nav-link" ui-sref="about"><i class="fa fa-star-o"></i><em>Astronomy Photo of the Day</em></a></li>
+        <li><a class="s-sidebar__nav-link" ui-sref="issNow"><i class="fa fa-map-signs"></i><em>ISS Tracker</em></a></li>
+        <li><a class="s-sidebar__nav-link" ui-sref="explore"><i class="fa fa-spinner"></i><em>Discover the Cosmos</em></a></li>
+       <!-- <li><a class="s-sidebar__nav-link" ui-sref="spacemen"><i class="fa fa-space-shuttle"></i><em>Meet the Spacemen</em></a></li>-->
+      </ul>
+    </nav>
+  </div>
+
+
+<!--~~~~~~~~~~~~~ END NAVBAR ~~~~~~~~~~~~-->
+<!-- Content -->
+
+
+  <main class="s-layout__content">
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+      <!-- angular templating -->
+      <ui-view></ui-view>
+      <!-- this is where content will be injected -->
+      <div ng-view></div>
+    </div>
+
+  </div>
+  </main>
+</body>
+
+<!--==== JQUERY SCRIPT ====-->
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<!--==== BOOTSTRAP SCRIPT ====-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- ANGULAR & ANGULAR ROUTE SCRIPTS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<!--==== LEAFLET SCRIPT ====-->
+<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<!--==== CUSTOM JS SCRIPTS ====-->
+<script type="text/javascript" src="app.module.js"></script>
+<script type="text/javascript" src="app.routes.js"></script>
+<script type="text/javascript" src="components/home/home-controller.js"></script>
+<script type="text/javascript" src="components/home/home-service.js"></script>
+<script type="text/javascript" src="components/about/about-controller.js"></script>
+<script type="text/javascript" src="components/about/about-service.js"></script>
+<script type="text/javascript" src="components/iss-now/iss-now-controller.js"></script>
+<script type="text/javascript" src="components/iss-now/iss-now-service.js"></script>
+<script type="text/javascript" src="components/iss-now/iss-now-directive.js"></script>
+<script type="text/javascript" src="components/pass-times/pass-times-controller.js"></script>
+<script type="text/javascript" src="components/pass-times/pass-times-service.js"></script>
+<script type="text/javascript" src="components/spacemen/spacemen-controller.js"></script>
+<script type="text/javascript" src="components/spacemen/spacemen-service.js"></script>
+
+</html>
+
+
+<!-------------------------->

@@ -1,0 +1,11 @@
+.spacemen-view {
+  z-index: -1;
+  margin: 0;
+  background: #111;
+}
+.starfield {
+  z-index: -1;
+	background: #111;
+  width: 100%vw;
+  height: auto;
+}

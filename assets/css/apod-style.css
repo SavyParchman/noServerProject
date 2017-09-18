@@ -1,0 +1,66 @@
+#apod-view {
+  text-align: center;
+  color: #000000;
+  background-color: white;
+  letter-spacing: 0.26em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.apod-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #f4fefd;
+  font-weight: 700;
+}
+.apod-name {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #f4fefd;
+  font-weight: 700;
+}
+
+.photo-div {
+  margin: 20px;
+  align-items: center;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 10px;
+  border: 1px solid #f4fefd;
+
+}
+
+.apod-image {
+  width:960px;
+  margin:1rem auto;
+  position: relative;
+  animation: none;
+}
+
+.apod-text {
+  overflow: hidden;
+  background:rgba(255,255,255,0.5);
+  position: absolute;
+  top:50%;
+  max-width: 800px;
+  padding:1rem;
+  transform:translateY(-50%);
+  color: black;
+  font-family: 'Sans Source Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  transform:translateY(-50%);
+  text-shadow: 0px 0px 15px black;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) 
+{
+   .photo-div, .exp-div
+   {
+        max-width: 100%;
+   }
+}
