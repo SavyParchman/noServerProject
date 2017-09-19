@@ -9,7 +9,7 @@ angular.module('iss').config(function($stateProvider, $urlRouterProvider) {
       controller: 'homeCtrl'
   })
     .state('about', {
-      url: './about',
+      url: '/about',
       templateUrl: './components/about/about-view.html',
       controller: 'aboutCtrl'
     })
